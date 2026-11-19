@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   "crates/game/src/feel.rs": {
-    "mtime": 1795063322.6979675,
-    "seen": 1795063369.17021,
-    "ast_hash": "5b91443d0ac2eff4eb6a748621e6743b",
+    "mtime": 1795065966.790478,
+    "seen": 1795065969.2358687,
+    "ast_hash": "99a4a4e3daebeb227118cc48a0893380",
     "semantic_hash": ""
   },
   "crates/game/src/input.rs": {
@@ -138,9 +138,9 @@
     "semantic_hash": ""
   },
   "tools/audio/synth_sfx.py": {
-    "mtime": 1795060993.3333087,
-    "seen": 1795063188.0897079,
-    "ast_hash": "4edca6796917fcfa98348a015c0676b0",
+    "mtime": 1795065913.3252819,
+    "seen": 1795065969.2358775,
+    "ast_hash": "c10ca74c03590a7244648b19a3d46b74",
     "semantic_hash": ""
   },
   "tools/blender/build_all.sh": {
@@ -258,9 +258,9 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1795053534.0886018,
-    "seen": 1795063188.089719,
-    "ast_hash": "5b76476b73c0f89b11702cefb73c32dd",
+    "mtime": 1795064592.80482,
+    "seen": 1795065969.235889,
+    "ast_hash": "aa140f34259f8ecbd25564d842eba4c3",
     "semantic_hash": ""
   },
   "GLOSSARY.md": {
@@ -318,99 +318,99 @@
     "semantic_hash": ""
   },
   "assets/sounds/block.wav": {
-    "mtime": 1795060994.154612,
-    "seen": 1795063188.089724,
-    "ast_hash": "983614780d928ff4da2e0401492c9940",
+    "mtime": 1795065913.909037,
+    "seen": 1795065969.235894,
+    "ast_hash": "5605b1ec16c77f9083e5a51c89bad066",
     "semantic_hash": ""
   },
   "assets/sounds/charge.wav": {
-    "mtime": 1795060994.1661377,
-    "seen": 1795063188.0897248,
-    "ast_hash": "f0d8def0f7625f25165e2e68b7f40981",
+    "mtime": 1795065915.1709487,
+    "seen": 1795065969.2358947,
+    "ast_hash": "33d78864fcf90ca944044abb1ecfcc26",
     "semantic_hash": ""
   },
   "assets/sounds/death.wav": {
-    "mtime": 1795060994.1633143,
-    "seen": 1795063188.0897253,
-    "ast_hash": "51b107426ac416141acfaa73d7277326",
+    "mtime": 1795065914.8467095,
+    "seen": 1795065969.2358954,
+    "ast_hash": "e9f81bee4bc5119cb5d8250fede8f976",
     "semantic_hash": ""
   },
   "assets/sounds/dodge.wav": {
-    "mtime": 1795060994.166333,
-    "seen": 1795063188.0897257,
-    "ast_hash": "4224dee8394d775689de54d7f7839b72",
+    "mtime": 1795065915.2976174,
+    "seen": 1795065969.2358959,
+    "ast_hash": "4c078c51327ed9613772e50617fabaf5",
     "semantic_hash": ""
   },
   "assets/sounds/footstep.wav": {
-    "mtime": 1795060994.166577,
-    "seen": 1795063188.0897262,
-    "ast_hash": "526f67a8472f348e30bbca01ade08610",
+    "mtime": 1795065915.436513,
+    "seen": 1795065969.2358963,
+    "ast_hash": "db2d0d04591d34a1432a31ecc69955dc",
     "semantic_hash": ""
   },
   "assets/sounds/guard_break.wav": {
-    "mtime": 1795060994.1603143,
-    "seen": 1795063188.089727,
-    "ast_hash": "8d098eb00f9e1e86197387158852bd1a",
+    "mtime": 1795065914.4123147,
+    "seen": 1795065969.2358966,
+    "ast_hash": "743cf2c4d98bda378e17114879acf3bb",
     "semantic_hash": ""
   },
   "assets/sounds/hit_crunch.wav": {
-    "mtime": 1795060994.1544244,
-    "seen": 1795063188.0897274,
-    "ast_hash": "666e6025034d90aedce16ee5af660307",
+    "mtime": 1795065913.7398188,
+    "seen": 1795065969.235897,
+    "ast_hash": "7e7fb9267f67c7d08319f7c049e8b98b",
     "semantic_hash": ""
   },
   "assets/sounds/hit_thud.wav": {
-    "mtime": 1795060994.1543152,
-    "seen": 1795063188.0897276,
-    "ast_hash": "bd406a4460acc07ce08f16976bacb43b",
+    "mtime": 1795065913.6882362,
+    "seen": 1795065969.2358975,
+    "ast_hash": "a852f8f189875edcffc62442f151e196",
     "semantic_hash": ""
   },
   "assets/sounds/hit_wood.wav": {
-    "mtime": 1795060994.154515,
-    "seen": 1795063188.0897284,
-    "ast_hash": "6e49f6ddec02baf04cc5a17483595fc9",
+    "mtime": 1795065913.8046567,
+    "seen": 1795065969.2358978,
+    "ast_hash": "4bed8262183b32ef030d73056e3ce59f",
     "semantic_hash": ""
   },
   "assets/sounds/hurt.wav": {
-    "mtime": 1795060994.1664817,
-    "seen": 1795063188.0897288,
-    "ast_hash": "0771af0c20d428021f0bcecb439dacc0",
+    "mtime": 1795065915.3808832,
+    "seen": 1795065969.2358983,
+    "ast_hash": "65f0981fb8136d742f985a66a13ec4ea",
     "semantic_hash": ""
   },
   "assets/sounds/kick.wav": {
-    "mtime": 1795060994.1611679,
-    "seen": 1795063188.0897293,
-    "ast_hash": "027f33b15dd61f478b7d4724a1d523b5",
+    "mtime": 1795065914.529767,
+    "seen": 1795065969.235899,
+    "ast_hash": "fcdde57892733246ad1f5ec5634c3d93",
     "semantic_hash": ""
   },
   "assets/sounds/parry.wav": {
-    "mtime": 1795060994.1563144,
-    "seen": 1795063188.0897298,
-    "ast_hash": "f06b5c8fdef64ad0979404cd09acd9a5",
+    "mtime": 1795065914.1629398,
+    "seen": 1795065969.2358994,
+    "ast_hash": "527b3a3d829da2cb587f1798dd51fe3f",
     "semantic_hash": ""
   },
   "assets/sounds/spikes.wav": {
-    "mtime": 1795060994.1613145,
-    "seen": 1795063188.08973,
-    "ast_hash": "b21d10a62a0faec40c461381abdb5a9a",
+    "mtime": 1795065914.6399703,
+    "seen": 1795065969.2359,
+    "ast_hash": "6dafcdb462989eaa339e730289f57fde",
     "semantic_hash": ""
   },
   "assets/sounds/swing_heavy.wav": {
-    "mtime": 1795060994.1541464,
-    "seen": 1795063188.0897305,
-    "ast_hash": "14e186cdb08719fa80571b1175adf441",
+    "mtime": 1795065913.6086261,
+    "seen": 1795065969.2359002,
+    "ast_hash": "ff6abc692a5c68bb5ec351f4a824c1f5",
     "semantic_hash": ""
   },
   "assets/sounds/swing_light.wav": {
-    "mtime": 1795060994.153307,
-    "seen": 1795063188.089731,
-    "ast_hash": "5a8d6a994052f0c4ccca65eed7fb43cb",
+    "mtime": 1795065913.520815,
+    "seen": 1795065969.2359006,
+    "ast_hash": "f90882b193315a7f89e0cbf6982277d4",
     "semantic_hash": ""
   },
   "assets/sounds/telegraph.wav": {
-    "mtime": 1795060994.1645,
-    "seen": 1795063188.0897317,
-    "ast_hash": "fd75b39bdcc701fc4074ade6305bd818",
+    "mtime": 1795065915.0003858,
+    "seen": 1795065969.235901,
+    "ast_hash": "360059514f1aea0903ae3f3a4bd70f81",
     "semantic_hash": ""
   }
 }
