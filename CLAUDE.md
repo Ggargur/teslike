@@ -13,3 +13,8 @@ Rules:
 
 - Never add a `Co-Authored-By: Claude ...` trailer (or any Claude/AI attribution line) to commit messages. Commits are authored only by the git user.
 - Do not add "Generated with Claude Code" or similar attribution to PR descriptions either.
+
+## Modo de trabalho
+
+- Você pode separar seu trabalho em modelos com efforts menores ou maiores caso ache necessário.
+- Use respostas sucintas.
