@@ -79,11 +79,72 @@ S["dodge"] = whoosh(.3, 2000, 600, .6, .8) * .8 + .3 * lp(noise(.3), 400) * np.s
 S["hurt"] = sat(sine_drop(.4, 100, 40, .14) * 1.3 + lp(noise(.4), 500) * env(.4, .001, .05) * 4 + bp(noise(.4), 1500, 1) * env(.4, .001, .03) * 2, 2.2)
 S["footstep"] = sat(sine_drop(.16, 160, 60, .035) * .9 + bp(noise(.16), 1200, 1.2) * env(.16, .0005, .02) * 2.5 + lp(noise(.16), 300) * env(.16, .001, .03) * 2, 1.5)
 
+# ---------------------------------------------------------------- mastering
+# Every asset leaves here at the same perceived loudness with true-peak headroom;
+# the mix hierarchy (swings under hits, quiet footsteps...) lives in feel.ron.
+REF_LUFS = -12.0      # max momentary loudness (100 ms, BS.1770 K-weighted)
+CEIL_DBTP = -1.0      # true-peak ceiling (4x oversampled), survives 44.1k->48k resampling
+HPF_HZ, LPF_HZ = 35.0, 16000.0
+FADE_IN_MS, FADE_OUT_MS, TAIL_DB = 1.0, 12.0, -60.0
+
+def biquad(x, b, a):
+    y = np.empty_like(x); x1 = x2 = y1 = y2 = 0.0
+    b0, b1, b2 = b; _, a1, a2 = a
+    for i in range(len(x)):
+        v = x[i]; o = b0 * v + b1 * x1 + b2 * x2 - a1 * y1 - a2 * y2
+        x2, x1, y2, y1 = x1, v, y1, o; y[i] = o
+    return y
+def butter2(x, fc, high):
+    k = np.tan(np.pi * fc / SR); q = 2 ** -.5; n = 1 / (1 + k / q + k * k)
+    b = [n, -2 * n, n] if high else [k * k * n, 2 * k * k * n, k * k * n]
+    return biquad(x, b, [1, 2 * (k * k - 1) * n, (1 - k / q + k * k) * n])
+def k_weight(x):
+    k = np.tan(np.pi * 1681.974450955533 / SR); q = .7071752369554196
+    vh = 10 ** (3.999843853973347 / 20); vb = vh ** .4996667741545416; a0 = 1 + k / q + k * k
+    x = biquad(x, [(vh + vb * k / q + k * k) / a0, 2 * (k * k - vh) / a0, (vh - vb * k / q + k * k) / a0],
+               [1, 2 * (k * k - 1) / a0, (1 - k / q + k * k) / a0])
+    k = np.tan(np.pi * 38.13547087602444 / SR); q = .5003270373238773; a0 = 1 + k / q + k * k
+    return biquad(x, [1, -2, 1], [1, 2 * (k * k - 1) / a0, (1 - k / q + k * k) / a0])
+def loudness(x, win=.1):
+    p = k_weight(x) ** 2; n = int(SR * win); p = np.pad(p, (0, max(0, n - len(p))))
+    return -.691 + 10 * np.log10(np.convolve(p, np.ones(n) / n, "valid").max() + 1e-12)
+def upsample4(x):
+    pad = 1024; n = len(x) + 2 * pad; X = np.fft.rfft(np.pad(x, pad))
+    Y = np.zeros(2 * n + 1, complex); Y[:len(X)] = X
+    return np.fft.irfft(Y, 4 * n)[4 * pad:4 * (pad + len(x))] * 4
+def true_peak(x): return 20 * np.log10(np.abs(upsample4(x)).max() + 1e-12)
+def limit(x, ceil_db, look_ms=1.5, rel_ms=60.0):
+    """Lookahead brickwall on the 4x-oversampled envelope; gain glides back over rel_ms."""
+    c = 10 ** (ceil_db / 20)
+    pk = np.abs(upsample4(x)).reshape(-1, 4).max(1)
+    need = np.minimum(1, c / np.maximum(pk, 1e-9))
+    la = int(SR * look_ms / 1000)
+    need = np.array([need[i:i + la + 1].min() for i in range(len(need))])  # look ahead
+    r = np.exp(-1 / (SR * rel_ms / 1000)); g = np.empty_like(need); s = 1.0
+    for i in range(len(need)):
+        s = need[i] if need[i] < s else need[i] + (s - need[i]) * r; g[i] = s
+    return x * g
+def master(x):
+    x = np.asarray(x, float); x = x - x.mean()
+    x = butter2(butter2(x, HPF_HZ, True), LPF_HZ, False)
+    tail = np.nonzero(np.abs(x) > 10 ** (TAIL_DB / 20) * np.abs(x).max())[0][-1] + 1
+    x = x[:tail]
+    n = int(SR * FADE_IN_MS / 1000); x[:n] *= .5 - .5 * np.cos(np.linspace(0, np.pi, n))
+    n = min(int(SR * FADE_OUT_MS / 1000), len(x) // 4); x[-n:] *= np.cos(np.linspace(0, np.pi / 2, n)) ** 2
+    x = x * 10 ** ((REF_LUFS - loudness(x)) / 20)
+    for _ in range(4):  # limiter, then trim any residual over left by the 16-bit grid
+        x = limit(x, CEIL_DBTP - .1)
+        over = true_peak(x) - CEIL_DBTP
+        if over <= 0: break
+        x *= 10 ** (-(over + .05) / 20)
+    return x
+
 os.makedirs(OUT, exist_ok=True)
+print(f"{'sound':12} {'dur':>5} {'LUFS-M':>7} {'dBTP':>6} {'limGR':>5}")
 for name, x in S.items():
-    x = fade(np.asarray(x, float)); x -= x.mean()
-    x = x / np.max(np.abs(x)) * 0.89
+    y = master(x)
     with wave.open(os.path.join(OUT, name + ".wav"), "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR)
-        w.writeframes((x * 32767).astype("<i2").tobytes())
-    print(f"{name}.wav {len(x)/SR:.2f}s")
+        w.writeframes(np.round(np.clip(y, -1, 1) * 32767).astype("<i2").tobytes())
+    m = loudness(y)
+    print(f"{name:12} {len(y)/SR:5.2f} {m:7.1f} {true_peak(y):6.1f} {REF_LUFS - m:5.1f}")

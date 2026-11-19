@@ -92,7 +92,7 @@ impl Default for FeelConfig {
             spark_size: 0.035,
             pitch_jitter: 0.08,
             swing_volume: 0.6,
-            footstep_volume: 0.25,
+            footstep_volume: 0.12,
             master_volume: 0.8,
         }
     }
