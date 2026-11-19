@@ -1,0 +1,416 @@
+{
+  ".claude/settings.json": {
+    "mtime": 1795053250.5776188,
+    "seen": 1795063188.0896907,
+    "ast_hash": "dc5ff8d8924fa22538516a727ae8c0a7",
+    "semantic_hash": ""
+  },
+  "Cargo.toml": {
+    "mtime": 1795061414.070193,
+    "seen": 1795063188.0896945,
+    "ast_hash": "66d6327b905baea09e883b8547a8c161",
+    "semantic_hash": ""
+  },
+  "crates/game/Cargo.toml": {
+    "mtime": 1795061510.9202847,
+    "seen": 1795063188.0896962,
+    "ast_hash": "6a9531274e2afd97b1550d09b7b76bf6",
+    "semantic_hash": ""
+  },
+  "crates/game/src/arena.rs": {
+    "mtime": 1795063330.1707222,
+    "seen": 1795063369.170207,
+    "ast_hash": "fda2d0c75a603b13418203560aa71a06",
+    "semantic_hash": ""
+  },
+  "crates/game/src/combat.rs": {
+    "mtime": 1795063322.6981752,
+    "seen": 1795063369.170208,
+    "ast_hash": "9e07d29a8c989ab581ac194a530503db",
+    "semantic_hash": ""
+  },
+  "crates/game/src/config.rs": {
+    "mtime": 1795061990.7706194,
+    "seen": 1795063188.089698,
+    "ast_hash": "1be304cff0be700ed9fca70e1c5ba7e8",
+    "semantic_hash": ""
+  },
+  "crates/game/src/enemy.rs": {
+    "mtime": 1795063322.6981266,
+    "seen": 1795063369.1702092,
+    "ast_hash": "96dd608a32bc81b94c7d76d8c310d807",
+    "semantic_hash": ""
+  },
+  "crates/game/src/feel.rs": {
+    "mtime": 1795063322.6979675,
+    "seen": 1795063369.17021,
+    "ast_hash": "5b91443d0ac2eff4eb6a748621e6743b",
+    "semantic_hash": ""
+  },
+  "crates/game/src/input.rs": {
+    "mtime": 1795061591.2024117,
+    "seen": 1795063188.0896997,
+    "ast_hash": "27be6b106921727f4bc7d661e9d4ac8c",
+    "semantic_hash": ""
+  },
+  "crates/game/src/main.rs": {
+    "mtime": 1795063148.8295803,
+    "seen": 1795063188.0897005,
+    "ast_hash": "f5db41a9155d48f98698beed9033d908",
+    "semantic_hash": ""
+  },
+  "crates/game/src/mover.rs": {
+    "mtime": 1795063074.5743697,
+    "seen": 1795063188.089701,
+    "ast_hash": "589f28f717e13128a3964d93b73b85b0",
+    "semantic_hash": ""
+  },
+  "crates/game/src/player.rs": {
+    "mtime": 1795063330.1706388,
+    "seen": 1795063369.1702123,
+    "ast_hash": "9008e47d7804d49972f824453406d8e9",
+    "semantic_hash": ""
+  },
+  "crates/game/src/room.rs": {
+    "mtime": 1795062680.9865744,
+    "seen": 1795063188.0897021,
+    "ast_hash": "ee7d52a66ea83d4cae440ab11628c0f3",
+    "semantic_hash": ""
+  },
+  "crates/game/src/script.rs": {
+    "mtime": 1795063148.8354108,
+    "seen": 1795063188.0897026,
+    "ast_hash": "fe5454b1dc4628ce31035a332fc04b99",
+    "semantic_hash": ""
+  },
+  "crates/game/src/viewmodel.rs": {
+    "mtime": 1795063127.5118997,
+    "seen": 1795063188.089703,
+    "ast_hash": "e18f8a12c33a57a0b73d17ee22ecfe42",
+    "semantic_hash": ""
+  },
+  "crates/psx/Cargo.toml": {
+    "mtime": 1795061414.0601928,
+    "seen": 1795063188.0897038,
+    "ast_hash": "b14ca800fa912aabeecb56df5caeafdd",
+    "semantic_hash": ""
+  },
+  "crates/psx/examples/room.rs": {
+    "mtime": 1795061711.0731292,
+    "seen": 1795063188.0897043,
+    "ast_hash": "3b7798df78c5a41f5ca8301f509f57e3",
+    "semantic_hash": ""
+  },
+  "crates/psx/src/lib.rs": {
+    "mtime": 1795062127.4132488,
+    "seen": 1795063188.0897045,
+    "ast_hash": "3d12accfe180ee082f8f965c66d2fd84",
+    "semantic_hash": ""
+  },
+  "crates/rules/Cargo.toml": {
+    "mtime": 1795060889.0274916,
+    "seen": 1795063188.089705,
+    "ast_hash": "0b86c0b03b5e32b12759a9d1a8ff6720",
+    "semantic_hash": ""
+  },
+  "crates/rules/src/config.rs": {
+    "mtime": 1795062739.2146988,
+    "seen": 1795063188.0897055,
+    "ast_hash": "b9e8ebd8fa7c1711205014fad7e4bf58",
+    "semantic_hash": ""
+  },
+  "crates/rules/src/fighter.rs": {
+    "mtime": 1795063308.3235683,
+    "seen": 1795063369.1702182,
+    "ast_hash": "a409457f818af66274bc95b74017b38e",
+    "semantic_hash": ""
+  },
+  "crates/rules/src/lib.rs": {
+    "mtime": 1795061115.1131415,
+    "seen": 1795063188.0897064,
+    "ast_hash": "36e1bd60d5656ced9e419b627226d1d0",
+    "semantic_hash": ""
+  },
+  "crates/rules/tests/combat.rs": {
+    "mtime": 1795063303.4353797,
+    "seen": 1795063369.1702192,
+    "ast_hash": "1bd289ee66f29ce2caa265b3febce52a",
+    "semantic_hash": ""
+  },
+  "tools/audio/synth_sfx.py": {
+    "mtime": 1795060993.3333087,
+    "seen": 1795063188.0897079,
+    "ast_hash": "4edca6796917fcfa98348a015c0676b0",
+    "semantic_hash": ""
+  },
+  "tools/blender/build_all.sh": {
+    "mtime": 1795061249.993066,
+    "seen": 1795063188.0897083,
+    "ast_hash": "fc80e2575f2f312da832d8e11b027646",
+    "semantic_hash": ""
+  },
+  "tools/blender/common.py": {
+    "mtime": 1795061203.9731052,
+    "seen": 1795063188.0897088,
+    "ast_hash": "c75626ce4323caeb485b7a8ec3d749b8",
+    "semantic_hash": ""
+  },
+  "tools/blender/dummy.py": {
+    "mtime": 1795061234.4519594,
+    "seen": 1795063188.0897093,
+    "ast_hash": "6714932bee6944abb9acaa69926cc3c2",
+    "semantic_hash": ""
+  },
+  "tools/blender/humanoid.py": {
+    "mtime": 1795061234.4469728,
+    "seen": 1795063188.0897098,
+    "ast_hash": "fd9dfb68fdee866b5356d1b6032fb8f3",
+    "semantic_hash": ""
+  },
+  "tools/blender/sword.py": {
+    "mtime": 1795061069.742831,
+    "seen": 1795063188.0897102,
+    "ast_hash": "5526b4f6ee1858375a0139059c9a9dab",
+    "semantic_hash": ""
+  },
+  ".scratch/prototipo-1-combate/issues/01-fundacao-do-workspace.md": {
+    "mtime": 1795060559.587296,
+    "seen": 1795063188.0897112,
+    "ast_hash": "76a8e0b4bf03facd825ca950700fa424",
+    "semantic_hash": ""
+  },
+  ".scratch/prototipo-1-combate/issues/02-sala-de-teste-com-visual-psx.md": {
+    "mtime": 1795060559.5881245,
+    "seen": 1795063188.089712,
+    "ast_hash": "ef1a8582b0f251e6936aa42f49ea4683",
+    "semantic_hash": ""
+  },
+  ".scratch/prototipo-1-combate/issues/03-andar-pela-sala.md": {
+    "mtime": 1795060559.588296,
+    "seen": 1795063188.0897124,
+    "ast_hash": "91301e3c41a4ad2d1909eb94696e6799",
+    "semantic_hash": ""
+  },
+  ".scratch/prototipo-1-combate/issues/04-ataque-leve-no-boneco.md": {
+    "mtime": 1795060559.5892158,
+    "seen": 1795063188.0897129,
+    "ast_hash": "001867d83be07fa24689bf70e7c47875",
+    "semantic_hash": ""
+  },
+  ".scratch/prototipo-1-combate/issues/05-camada-completa-de-game-feel.md": {
+    "mtime": 1795060559.589296,
+    "seen": 1795063188.0897133,
+    "ast_hash": "02683650f60e9f2d843a8f900758a523",
+    "semantic_hash": ""
+  },
+  ".scratch/prototipo-1-combate/issues/06-ataque-carregado.md": {
+    "mtime": 1795060559.590216,
+    "seen": 1795063188.0897143,
+    "ast_hash": "bc1b1e7e4e4b60bcd298d70b3d6b9bb4",
+    "semantic_hash": ""
+  },
+  ".scratch/prototipo-1-combate/issues/07-bloqueio-quebra-de-guarda-e-boneco-que-ataca.md": {
+    "mtime": 1795060559.590296,
+    "seen": 1795063188.0897148,
+    "ast_hash": "0d5a03f4dab1bdfd662744cfdbb35bbf",
+    "semantic_hash": ""
+  },
+  ".scratch/prototipo-1-combate/issues/08-aparo.md": {
+    "mtime": 1795060559.5912075,
+    "seen": 1795063188.089715,
+    "ast_hash": "55fd886f68542f923cd91b8ce4571031",
+    "semantic_hash": ""
+  },
+  ".scratch/prototipo-1-combate/issues/09-esquiva.md": {
+    "mtime": 1795060559.591296,
+    "seen": 1795063188.0897155,
+    "ast_hash": "fec9343851a54c56e92ddd29642eebbf",
+    "semantic_hash": ""
+  },
+  ".scratch/prototipo-1-combate/issues/10-chute-e-espetos.md": {
+    "mtime": 1795060559.5923617,
+    "seen": 1795063188.089716,
+    "ast_hash": "26880b6a3f271fae949c0f6ca7e2299d",
+    "semantic_hash": ""
+  },
+  ".scratch/prototipo-1-combate/issues/11-inimigo-humanoide-que-ataca.md": {
+    "mtime": 1795060559.592925,
+    "seen": 1795063188.0897164,
+    "ast_hash": "1f81909278625559790d6efc3fee3acc",
+    "semantic_hash": ""
+  },
+  ".scratch/prototipo-1-combate/issues/12-inimigo-que-defende-e-reage.md": {
+    "mtime": 1795060559.5934582,
+    "seen": 1795063188.089717,
+    "ast_hash": "2f5ac94f81e5c883d0d0f5be73911abb",
+    "semantic_hash": ""
+  },
+  ".scratch/prototipo-1-combate/issues/13-loop-de-arena.md": {
+    "mtime": 1795060559.5940175,
+    "seen": 1795063188.0897174,
+    "ast_hash": "8b955fbc07c40976e241ab51b6a4e3f0",
+    "semantic_hash": ""
+  },
+  ".scratch/prototipo-1-combate/issues/14-playtest-e-ajuste-final.md": {
+    "mtime": 1795060559.5944502,
+    "seen": 1795063188.089718,
+    "ast_hash": "72279665892f7537191f48594c4da116",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1795053534.0886018,
+    "seen": 1795063188.089719,
+    "ast_hash": "5b76476b73c0f89b11702cefb73c32dd",
+    "semantic_hash": ""
+  },
+  "GLOSSARY.md": {
+    "mtime": 1795052970.5191615,
+    "seen": 1795063188.0897195,
+    "ast_hash": "64190484bb6b21d83939f8555f5f76fa",
+    "semantic_hash": ""
+  },
+  "assets/fonts/DejaVu-LICENSE.txt": {
+    "mtime": 1795062465.5162473,
+    "seen": 1795063188.08972,
+    "ast_hash": "449b2c30bfe5fa897fe87b8b70b16cfa",
+    "semantic_hash": ""
+  },
+  "assets/sounds/LICENSE.txt": {
+    "mtime": 1795060993.337183,
+    "seen": 1795063188.0897205,
+    "ast_hash": "e4fcc16e9919f91ed017af88a3ba6ef7",
+    "semantic_hash": ""
+  },
+  "docs/adr/0001-acao-3d-primeira-pessoa-em-bevy.md": {
+    "mtime": 1795052121.3017845,
+    "seen": 1795063188.0897212,
+    "ast_hash": "eddac7d4f5f99deae8811a8fa9077819",
+    "semantic_hash": ""
+  },
+  "docs/plano/playtest-checklist.md": {
+    "mtime": 1795063183.504867,
+    "seen": 1795063188.0897217,
+    "ast_hash": "f777e4e83e3c10f32899385b31d42a7b",
+    "semantic_hash": ""
+  },
+  "docs/plano/prototipo-1-combate.md": {
+    "mtime": 1795052980.7972429,
+    "seen": 1795063188.0897222,
+    "ast_hash": "18495ecf08aba94408d674bd2dab5525",
+    "semantic_hash": ""
+  },
+  "assets/models/dummy.png": {
+    "mtime": 1795061255.795106,
+    "seen": 1795063188.0897224,
+    "ast_hash": "5d2883228c435028a7619e95823e64fd",
+    "semantic_hash": ""
+  },
+  "assets/models/humanoid.png": {
+    "mtime": 1795061254.0980942,
+    "seen": 1795063188.0897229,
+    "ast_hash": "e7fc65058c8a056a4cd5cf4dd6dba4ed",
+    "semantic_hash": ""
+  },
+  "assets/models/sword.png": {
+    "mtime": 1795061251.7650783,
+    "seen": 1795063188.0897236,
+    "ast_hash": "94ea75952644573c29a4ffac8bbf71f5",
+    "semantic_hash": ""
+  },
+  "assets/sounds/block.wav": {
+    "mtime": 1795060994.154612,
+    "seen": 1795063188.089724,
+    "ast_hash": "983614780d928ff4da2e0401492c9940",
+    "semantic_hash": ""
+  },
+  "assets/sounds/charge.wav": {
+    "mtime": 1795060994.1661377,
+    "seen": 1795063188.0897248,
+    "ast_hash": "f0d8def0f7625f25165e2e68b7f40981",
+    "semantic_hash": ""
+  },
+  "assets/sounds/death.wav": {
+    "mtime": 1795060994.1633143,
+    "seen": 1795063188.0897253,
+    "ast_hash": "51b107426ac416141acfaa73d7277326",
+    "semantic_hash": ""
+  },
+  "assets/sounds/dodge.wav": {
+    "mtime": 1795060994.166333,
+    "seen": 1795063188.0897257,
+    "ast_hash": "4224dee8394d775689de54d7f7839b72",
+    "semantic_hash": ""
+  },
+  "assets/sounds/footstep.wav": {
+    "mtime": 1795060994.166577,
+    "seen": 1795063188.0897262,
+    "ast_hash": "526f67a8472f348e30bbca01ade08610",
+    "semantic_hash": ""
+  },
+  "assets/sounds/guard_break.wav": {
+    "mtime": 1795060994.1603143,
+    "seen": 1795063188.089727,
+    "ast_hash": "8d098eb00f9e1e86197387158852bd1a",
+    "semantic_hash": ""
+  },
+  "assets/sounds/hit_crunch.wav": {
+    "mtime": 1795060994.1544244,
+    "seen": 1795063188.0897274,
+    "ast_hash": "666e6025034d90aedce16ee5af660307",
+    "semantic_hash": ""
+  },
+  "assets/sounds/hit_thud.wav": {
+    "mtime": 1795060994.1543152,
+    "seen": 1795063188.0897276,
+    "ast_hash": "bd406a4460acc07ce08f16976bacb43b",
+    "semantic_hash": ""
+  },
+  "assets/sounds/hit_wood.wav": {
+    "mtime": 1795060994.154515,
+    "seen": 1795063188.0897284,
+    "ast_hash": "6e49f6ddec02baf04cc5a17483595fc9",
+    "semantic_hash": ""
+  },
+  "assets/sounds/hurt.wav": {
+    "mtime": 1795060994.1664817,
+    "seen": 1795063188.0897288,
+    "ast_hash": "0771af0c20d428021f0bcecb439dacc0",
+    "semantic_hash": ""
+  },
+  "assets/sounds/kick.wav": {
+    "mtime": 1795060994.1611679,
+    "seen": 1795063188.0897293,
+    "ast_hash": "027f33b15dd61f478b7d4724a1d523b5",
+    "semantic_hash": ""
+  },
+  "assets/sounds/parry.wav": {
+    "mtime": 1795060994.1563144,
+    "seen": 1795063188.0897298,
+    "ast_hash": "f06b5c8fdef64ad0979404cd09acd9a5",
+    "semantic_hash": ""
+  },
+  "assets/sounds/spikes.wav": {
+    "mtime": 1795060994.1613145,
+    "seen": 1795063188.08973,
+    "ast_hash": "b21d10a62a0faec40c461381abdb5a9a",
+    "semantic_hash": ""
+  },
+  "assets/sounds/swing_heavy.wav": {
+    "mtime": 1795060994.1541464,
+    "seen": 1795063188.0897305,
+    "ast_hash": "14e186cdb08719fa80571b1175adf441",
+    "semantic_hash": ""
+  },
+  "assets/sounds/swing_light.wav": {
+    "mtime": 1795060994.153307,
+    "seen": 1795063188.089731,
+    "ast_hash": "5a8d6a994052f0c4ccca65eed7fb43cb",
+    "semantic_hash": ""
+  },
+  "assets/sounds/telegraph.wav": {
+    "mtime": 1795060994.1645,
+    "seen": 1795063188.0897317,
+    "ast_hash": "fd75b39bdcc701fc4074ade6305bd818",
+    "semantic_hash": ""
+  }
+}

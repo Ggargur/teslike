@@ -1,0 +1,2 @@
+All sound effects in this directory were synthesized from scratch by
+tools/audio/synth_sfx.py (no samples used). Released under CC0 1.0 (public domain).

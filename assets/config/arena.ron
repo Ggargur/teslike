@@ -1,0 +1,4 @@
+(
+    restart_delay: 1.4,
+    enemy_spawn: (2.0, 0.0, -3.0),
+)

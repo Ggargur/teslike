@@ -1,0 +1,14 @@
+(
+    kick_reach: 1.5,
+    kick_radius: 0.35,
+    kick_force: 11.0,
+    light_push: 1.8,
+    charged_push: 5.0,
+    guard_break_push: 3.0,
+    parry_push: 3.5,
+    spike_damage: 55.0,
+    spike_cooldown: 0.8,
+    spike_bounce: 4.0,
+    blade_radius: 0.07,
+    blade_samples: 10,
+)

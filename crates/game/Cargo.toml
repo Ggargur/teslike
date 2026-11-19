@@ -1,0 +1,18 @@
+[package]
+name = "game"
+version.workspace = true
+edition.workspace = true
+
+[features]
+default = ["dev"]
+dev = ["bevy/dynamic_linking", "bevy/file_watcher"]
+
+[dependencies]
+rules = { path = "../rules" }
+psx = { path = "../psx" }
+bevy = { version = "0.20", features = ["wav"] }
+avian3d = "0.8"
+leafwing-input-manager = "0.22"
+bevy-inspector-egui = "0.38"
+serde = { version = "1", features = ["derive"] }
+ron = "0.10"
